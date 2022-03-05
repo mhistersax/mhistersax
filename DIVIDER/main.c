@@ -9,11 +9,11 @@ int main(int argc, char **argv)
     // we use the ! to change it to 1 so that the overall condition 
     //becomes TRUE
       if (!(i % 3) && !(i % 5)) //checking if it divides by 3 AND 5 by taking % (modulus)
-	printf("%d FizzBuzz", i);   
+	printf("%d Divisible by 3 and 5", i);   
       else if (!(i % 3)) //checking if it divides by just 3 
-	printf("%d Fizz", i);
+	printf("%d Divisible by 3", i);
       else if (!(i % 5)) //checking if it divides by just 5
-	printf("%d Buzz", i);
+	printf("%d divisible by 5", i);
       else
 	printf("%d", i);
       printf("\n");
