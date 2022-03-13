@@ -3,7 +3,7 @@ int main(){
     int i,j;
     #define max 100
     int arr[max];
-    int num1,num2,num3,num4,num5,num6,num7,num8,num9,num10,re1,re2,re3;
+    int num1,num2,num3,num4,num5,num6,num7,num8,num9,num10,num11,num12,num13,num14,num15,num16,re1,re2,re3,re4,re5,re6,re7,re8;
     int b,a,c;
     b=-1;
 
@@ -83,7 +83,42 @@ int main(){
         break;
 
     case 2:
-    printf("WE WOULD SOLVE FOR THE SECOUND BATCH!!!");
+    printf("WE WOULD SOLVE FOR THE SECOND BATCH!!!\n");
+    break;
+    case 3:
+    printf("\n\nWE WOULD SOLVE THE FIRST BATCH\n");
+    printf("%d %d\n%d %d\n",arr[4],arr[5],arr[7],arr[8]);
+    printf("WE WOULD MULTIPLY %d & %d\n",arr[4],arr[8]);
+    printf("AND ALSO MULTIPLY %d & %d\n",arr[5],arr[7]);
+    num7 = arr[4] * arr[8];
+    num8 = arr[7] * arr[5];
+    printf("THE TOTAL OF %d & %d = %d\nTHE TOTAL OF %d & %d = %d\n",arr[4],arr[8],num7,arr[5],arr[7],num8);
+    re4 = arr[6]*(num8 - num7);
+    printf("THE RESULT OF THIS BATCH IS = %d\n",re4);
+
+    printf("\n\nWE WOULD SOLVE THE SECOND BATCH!!!\n");
+    printf("%d %d\n%d %d\n",arr[0],arr[2],arr[3],arr[5]);
+    printf("WE WOULD MULTIPLY %d & %d\n",arr[0],arr[2]);
+    printf("AND ALSO MULTIPLY %d & %d\n",arr[3],arr[5]);
+    a = arr[7] * b;
+    num9 = arr[3] * arr[2];
+    num10 = arr[0] * arr[5];
+    printf("THE TOTAL OF %d & %d = %d\nTHE TOTAL OF %d & %d = %d\n",arr[3],arr[8],num9,arr[6],arr[5],num10);
+    re5 = a * (num9 - num10);
+    printf("THE RESULT OF THIS BATCH IS = %d\n",re5);
+
+    printf("\n\nWE WOULD SOLVE THE THIRD BATCH!!!\n");
+    printf("%d %d\n%d %d\n",arr[0],arr[1],arr[3],arr[4]);
+    printf("WE WOULD MULTIPLY %d & %d\n",arr[0],arr[1]);
+    printf("AND ALSO MULTIPLY %d & %d\n",arr[3],arr[4]);
+    num11 = arr[1] * arr[3];
+    num12 = arr[0] * arr[4];
+    printf("THE TOTAL OF %d & %d = %d\nTHE TOTAL OF %d & %d = %d\n",arr[1],arr[3],num11,arr[0],arr[4],num12);
+    re6 = arr[8]*(num11 - num12);
+    printf("THE RESULT OF THIS BATCH IS %d\n",re6);
+
+    break;
+
     
     default:
     printf("go sleep");
