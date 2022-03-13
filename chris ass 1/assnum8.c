@@ -3,7 +3,7 @@ int main(){
     int i,j;
     #define max 100
     int arr[max];
-    int num1,num2,num3,num4,num5,num6,num7,num8,num9,num10,num11,num12,num13,num14,num15,num16,re1,re2,re3,re4,re5,re6,re7,re8;
+    int num1,num2,num3,num4,num5,num6,num7,num8,num9,num10,num11,num12,num13,num14,num15,num16,num17,num18,re1,re2,re3,re4,re5,re6,re7,re8;
     int b,a,c;
     b=-1;
 
@@ -49,7 +49,7 @@ int main(){
     switch(op)
     {
     case 1:
-    printf("\n\nWE WOULD SOLVE THE FIRST BATCH\n");
+    printf("\n\nWE WOULD SOLVE THE FIRST ROW\n");
     printf("%d %d\n%d %d\n",arr[4],arr[5],arr[7],arr[8]);
     printf("WE WOULD MULTIPLY %d & %d\n",arr[4],arr[8]);
     printf("AND ALSO MULTIPLY %d & %d\n",arr[5],arr[7]);
@@ -78,15 +78,55 @@ int main(){
     num6 = arr[6] * arr[4];
     printf("THE TOTAL OF %d & %d = %d\nTHE TOTAL OF %d & %d = %d\n",arr[3],arr[7],num5,arr[6],arr[4],num6);
     re3 = arr[2]*(num6 - num5);
+    int re9;
+    re9 = (re3 + re2 + re1);
+    printf("THE DETEMINAT OF THIS MATRIX %d\n",re9);
     printf("THE RESULT OF THIS BATCH IS %d\n",re3);
+    //c = re3 + re2 + 3;
+    //printf("THE DETEMINAT OF THIS MATRIX %d\n",c);
 
         break;
 
     case 2:
-    printf("WE WOULD SOLVE FOR THE SECOND BATCH!!!\n");
+    printf("\n\nWE WOULD SOLVE THE SECOND ROW\n");
+    printf("WE WOULD SOLVE FOR THE FIRST BATCH\n");
+    printf("%d %d\n%d %d\n",arr[1],arr[2],arr[7],arr[8]);
+    printf("WE WOULD MULTIPLY %d & %d\n",arr[1],arr[8]);
+    printf("AND ALSO MULTIPLY %d & %d\n",arr[2],arr[7]);
+    a = arr[3] * b;
+    num13 = arr[1] * arr[8];
+    num14 = arr[7] * arr[2];
+    printf("THE TOTAL OF %d & %d = %d\nTHE TOTAL OF %d & %d = %d\n",arr[4],arr[8],num1,arr[5],arr[7],num2);
+    re1 = a *(num14 - num13);
+    printf("THE RESULT OF THIS BATCH IS = %d\n",re1);
+
+    printf("\n\nWE WOULD SOLVE THE SECOND BATCH!!!\n");
+    printf("%d %d\n%d %d\n",arr[3],arr[5],arr[6],arr[8]);
+    printf("WE WOULD MULTIPLY %d & %d\n",arr[3],arr[5]);
+    printf("AND ALSO MULTIPLY %d & %d\n",arr[6],arr[8]);
+    //a = arr[1] * b;
+    num15 = arr[3] * arr[8];
+    num16 = arr[6] * arr[5];
+    printf("THE TOTAL OF %d & %d = %d\nTHE TOTAL OF %d & %d = %d\n",arr[3],arr[8],num3,arr[6],arr[5],num4);
+    re2 = arr[4] * (num4 - num3);
+    printf("THE RESULT OF THIS BATCH IS = %d\n",re2);
+
+    printf("\n\nWE WOULD SOLVE THE THIRD BATCH!!!\n");
+    printf("%d %d\n%d %d\n",arr[3],arr[4],arr[6],arr[7]);
+    printf("WE WOULD MULTIPLY %d & %d\n",arr[3],arr[4]);
+    printf("AND ALSO MULTIPLY %d & %d\n",arr[6],arr[7]);
+    num5 = arr[3] * arr[7];
+    num6 = arr[6] * arr[4];
+    printf("THE TOTAL OF %d & %d = %d\nTHE TOTAL OF %d & %d = %d\n",arr[3],arr[7],num5,arr[6],arr[4],num6);
+    re3 = arr[2]*(num6 - num5);
+    printf("THE RESULT OF THIS BATCH IS %d\n",re3);
+    re1 += re2 += re3;
+    printf("THE DETEMINAT OF THIS MATRIX %d\n",re1);
+    
     break;
     case 3:
-    printf("\n\nWE WOULD SOLVE THE FIRST BATCH\n");
+    printf("\n\nWE WOULD SOLVE THE THIRD ROW\n");
+    printf("WE WOULD SOLVE FOR THE FIRST BATCH\n");
     printf("%d %d\n%d %d\n",arr[4],arr[5],arr[7],arr[8]);
     printf("WE WOULD MULTIPLY %d & %d\n",arr[4],arr[8]);
     printf("AND ALSO MULTIPLY %d & %d\n",arr[5],arr[7]);
