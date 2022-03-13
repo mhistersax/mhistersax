@@ -3,7 +3,9 @@ int main(){
     int i,j;
     #define max 100
     int arr[max];
-    int num1,num2,num3,num4,num5,num6,num7;
+    int num1,num2,num3,num4,num5,num6,num7,num8,num9,num10,re1,re2,re3;
+    int b,a,c;
+    b=-1;
 
     printf("HELLO WELCOME\n");
     printf("THIS PROGRAM WIL ONLY BE FOR 3 X 3 MATRICS!!\n");
@@ -54,16 +56,34 @@ int main(){
     num1 = arr[4] * arr[8];
     num2 = arr[5] * arr[7];
     printf("THE TOTAL OF %d & %d = %d\nTHE TOTAL OF %d & %d = %d\n",arr[4],arr[8],num1,arr[5],arr[7],num2);
+    re1 = arr[0]*(num2 - num1);
+    printf("THE RESULT OF THIS BATCH IS = %d\n",re1);
 
     printf("\n\nWE WOULD SOLVE THE SECOND BATCH!!!\n");
     printf("%d %d\n%d %d\n",arr[3],arr[5],arr[6],arr[8]);
     printf("WE WOULD MULTIPLY %d & %d\n",arr[3],arr[5]);
     printf("AND ALSO MULTIPLY %d & %d\n",arr[6],arr[8]);
+    a = arr[1] * b;
     num3 = arr[3] * arr[8];
     num4 = arr[6] * arr[5];
     printf("THE TOTAL OF %d & %d = %d\nTHE TOTAL OF %d & %d = %d\n",arr[3],arr[8],num3,arr[6],arr[5],num4);
+    re2 = a * (num4 - num3);
+    printf("THE RESULT OF THIS BATCH IS = %d\n",re2);
+
+    printf("\n\nWE WOULD SOLVE THE THIRD BATCH!!!\n");
+    printf("%d %d\n%d %d\n",arr[3],arr[4],arr[6],arr[7]);
+    printf("WE WOULD MULTIPLY %d & %d\n",arr[3],arr[4]);
+    printf("AND ALSO MULTIPLY %d & %d\n",arr[6],arr[7]);
+    num5 = arr[3] * arr[7];
+    num6 = arr[6] * arr[4];
+    printf("THE TOTAL OF %d & %d = %d\nTHE TOTAL OF %d & %d = %d\n",arr[3],arr[7],num5,arr[6],arr[4],num6);
+    re3 = arr[2]*(num6 - num5);
+    printf("THE RESULT OF THIS BATCH IS %d\n",re3);
 
         break;
+
+    case 2:
+    printf("WE WOULD SOLVE FOR THE SECOUND BATCH!!!");
     
     default:
     printf("go sleep");
