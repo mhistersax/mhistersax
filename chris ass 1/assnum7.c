@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdlib.h>
+//#include <stdlib.h>
 #define max 100
 int main(){
     int i,j,num1;
@@ -10,7 +10,7 @@ int main(){
     if(num1<=3)
     {
         printf("SIZE NOT SUFFICENT FOR CREATING A TRIANGLE\n");
-        exit(0);
+        //exit(0);
 
     }
     else
@@ -24,13 +24,13 @@ int main(){
 
     }
 printf("THIS IS THE TRIANGLE FORMED FROMT HIS ARAY!!!\n");
-    for(i=1;i<num1;i++)
+    for(i=0;i<num1;i++)
     {
         for(j=i;j<num1;j++)
         {
             printf(" ");
         }
-        for(j=0; j<=(2*i-1); j++)
+        for(j=0; j<(2 * i-0); j++)
         {
             printf("%d",arr[i]);
         }
