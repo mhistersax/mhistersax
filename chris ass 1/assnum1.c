@@ -1,4 +1,5 @@
 #include <stdio.h>
+
 #define MAX 100
 #define max1 100
 

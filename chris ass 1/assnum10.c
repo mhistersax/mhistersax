@@ -4,6 +4,7 @@
 // Standard Kadane's algorithm to find maximum subarray
 // sum
 int kadane(int a[], int n);
+//kadane = kan 
 
 // The function returns maximum circular contiguous sum
 // in a[]

@@ -2,7 +2,7 @@
 int main(){
     int i,j;
     #define max 100
-    int arr[max];
+    /*int arr[max];
     int num1,num2,num3,num4,num5,num6,num7,num8,num9,num10,num11,num12,num13,num14,num15,num16,num17,num18,re1,re2,re3,re4,re5,re6,re7,re8;
     int b,a,c;
     b=-1;
@@ -29,58 +29,93 @@ int main(){
     scanf("%d",&arr[8]);
 
     printf("THIS IS THE DISPLAY OF YOUR INPUTED NUMBERS\n");
-    printf("%d\t\t%d\t\t%d\n%d\t\t%d\t\t%d\n%d\t\t%d\t\t%d\n",arr[0],arr[1],arr[2],arr[3],arr[4],arr[5],arr[6],arr[7],arr[8]);
-    printf("INORDER TO SOLVE A 3 X 3 MATRIX DETERMINAT YOU HAVE TO FOLLOW THIS STEPS\n");
-    printf("FIRST SPECIFY WHICH ROWS YOU WANT TO SOLVE\n");
-    //printf("THEN THE DETERMINAT WILL BE SOLVED\n");
-    printf("YOU WILL NOTICE THAT AT THE END OF EVERY ROWS THERE ARE ARITHMETIC SIGNS\n");
-    printf("THIS SIGNS ARE THERE TO GUIDE YOU WHEN SOLVING THE DETERMINAT!!\n");
-    printf("%d\t\t%d\t\t%d +  -  +\n%d\t\t%d\t\t%d  -  +  -\n%d\t\t%d\t\t%d  +  -  +\n\n\n",arr[0],arr[1],arr[2],arr[3],arr[4],arr[5],arr[6],arr[7],arr[8]);
-    printf("+%d|   |%d|\t|-%d|\t|+%d|\n",arr[0],arr[0],arr[1],arr[2]);
-    printf("  |   | |\t| |\t| |\n");
-    printf("-%d|   |%d|\t|+%d|\t|-%d|\n",arr[3],arr[3],arr[4],arr[5]);
-    printf("  |   | |\t| |\t| |\n");
-    printf("+%d|   |%d|\t|-%d|\t|+%d|\n",arr[6],arr[6],arr[7],arr[8]);
-    printf("  |   | |\t| |\t| |\n");
+    printf("%d\t%d\t%d\n%d\t%d\t%d\n%d\t%d\t%d\n",arr[0],arr[1],arr[2],arr[3],arr[4],arr[5],arr[6],arr[7],arr[8]);
 
+    //1    2    3
+    //4    5    6
+    //7    8    9
+
+    //dealing with the first row
+    // 5 * 6
+    // 8 * 9
+
+    // getting to the negative part
+    // 4 * 6
+    // 7 * 9
+
+    //the third part
+    // 4 * 5
+    // 7 * 8
+
+    //1  3  2
+    //-3  -1 -3
+    //2  3  1
+
+    /*let start with the solution
+    using 1
+    that -1 x 1
+    3 x -3
+    -1 x1 equal 1
+    3 x -3 equal -9
+   1 x  1 --9
+    that 10
     
-    printf("\n\nWE WOULD SOLVE THE FIRST ROW\n");
-    printf("%d %d\n%d %d\n",arr[4],arr[5],arr[7],arr[8]);
-    printf("WE WOULD MULTIPLY %d & %d\n",arr[4],arr[8]);
-    printf("AND ALSO MULTIPLY %d & %d\n",arr[5],arr[7]);
-    num1 = arr[4] * arr[8];
-    num2 = arr[5] * arr[7];
-    printf("THE TOTAL OF %d & %d = %d\nTHE TOTAL OF %d & %d = %d\n",arr[4],arr[8],num1,arr[5],arr[7],num2);
-    re1 = arr[0]*(num2 - num1);
-    printf("THE RESULT OF THIS BATCH IS = %d\n",re1);
+    solving secound batch
+    -3  -3 &
+    2   1
+    that -3 x 2 equals -6
+    -3 x 1 equals -3
+    using a negative multiplier
+    -3 x (-6--3)
+    -3 x -9
+    -24
+    
+    solving the third batch 
+    -3 x-1
+    */
 
-    printf("\n\nWE WOULD SOLVE THE SECOND BATCH!!!\n");
-    printf("%d %d\n%d %d\n",arr[3],arr[5],arr[6],arr[8]);
-    printf("WE WOULD MULTIPLY %d & %d\n",arr[3],arr[5]);
-    printf("AND ALSO MULTIPLY %d & %d\n",arr[6],arr[8]);
-    a = arr[1] * b;
+   /* printf("%d x %d\n",arr[4],arr[8]);
+    printf("%d x %d\n",arr[7],arr[5]);
+    //arr 4 x 8 & arr 7 x 5
+
+    num1 = arr[7] * arr[5];
+    num2 = arr[4] * arr[8];
+    re1 = num1 - num2;
+    printf("THE TOTAL RESULT OF THIS OPERAION %d\n",re1);
+ 
+
+    //solving for the 
+    // -2 
+    printf("\n\n%d x %d\n",arr[3],arr[6]);
+    printf("%d x %d\n",arr[8],arr[7]);
+    a = b * arr[1];
+    printf("%d\n",a);
     num3 = arr[3] * arr[8];
     num4 = arr[6] * arr[5];
-    printf("THE TOTAL OF %d & %d = %d\nTHE TOTAL OF %d & %d = %d\n",arr[3],arr[8],num3,arr[6],arr[5],num4);
-    re2 = a * (num3 - num4);
-    printf("THE RESULT OF THIS BATCH IS = %d\n",re2);
+    re2 = a*(num4 - num3);
+    printf("THE TOTAL RESULT OF THIS OPERAION %d\n",re2);
 
-    printf("\n\nWE WOULD SOLVE THE THIRD BATCH!!!\n");
-    printf("%d %d\n%d %d\n",arr[3],arr[4],arr[6],arr[7]);
-    printf("WE WOULD MULTIPLY %d & %d\n",arr[3],arr[4]);
-    printf("AND ALSO MULTIPLY %d & %d\n",arr[6],arr[7]);
+
+
+     
+    printf("\n\n%d x %d\n",arr[3],arr[6]);
+    printf("%d x %d\n",arr[4],arr[7]); 
     num5 = arr[3] * arr[7];
     num6 = arr[6] * arr[4];
-    printf("THE TOTAL OF %d & %d = %d\nTHE TOTAL OF %d & %d = %d\n",arr[3],arr[7],num5,arr[6],arr[4],num6);
-    re3 = arr[2]*(num6 - num5);
-    printf("THE RESULT OF THIS BATCH  IS %d\n",re3);
-    re4 = re3 + re2 - re1;
-    printf("THE DETEMINAT OF THIS MATRIX %d\n",re4);
-   
-    //c = re3 + re2 + 3;
-    //printf("THE DETEMINAT OF THIS MATRIX %d\n",c);
+    re3 = num6 - num5;
+    printf("THE TOTAL RESULT OF THIS OPERAION %d\n",re3);
+    re4 = re1 - re2 + re3;
+    printf("\n\nTHE TOTAL RESULT OF THIS OPERAION %d\n",re4);
 
-        
+
+    re5 = 1 * (8*6) - (5*9) -2 * (5*7) - (4*8) +3 * (5*7) - (4*8);
+        printf("\n\nTHE TOTAL RESULT OF THIS OPERAION %d\n",re5);*/
     
+    
+
+
+
+
+
     return 0;
 }
