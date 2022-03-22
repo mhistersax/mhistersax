@@ -1,8 +1,22 @@
 
 # MHISTER SAX
-THIS REPOSITRY CONTAIN MY APTECH EDUCATIONS PROJECT
 
 
+
+
+
+# HI I AM OLUWAPELUMI! 👋
+
+
+
+## 🚀 About Me
+I'm a full stack developer...
+
+
+
+
+## 🛠 Skills
+Javascript, HTML, CSS...
 
 
 ## Authors
