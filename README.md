@@ -1,12 +1,53 @@
 
+# MHISTER SAX
 
-- 👋 Hi, I’m @mhistersax
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
 
-<!---
-mhistersax/mhistersax is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+
+
+
+# HI I AM OLUWAPELUMI! 👋
+
+
+
+## 🚀 About Me
+I'm a full stack developer...
+
+
+
+
+# 🛠 Skills
+
+Javascript
+
+HTML
+
+ C
+
+
+ C#
+
+
+ C++
+
+
+ .NET
+
+
+Angular.js
+
+
+Node.js
+
+
+Python
+
+
+CSS...
+
+
+## Authors
+
+- [@mhistersax](https://github.com/mhistersax)
+
+
+
