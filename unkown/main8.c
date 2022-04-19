@@ -12,7 +12,7 @@ int main(){
              printf("%d + ",i);
             
         }
-    
+     
     }
     printf("= %d\n",sum);
     return 0;

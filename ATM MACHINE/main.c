@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <conio.h>
-#include <time.h>
 /*
 @Title : ATM MACHINE
 @Creator: JORDAN & PELUMI
@@ -811,7 +810,9 @@ int regist1(){
           printf("\n______________________________________________________________________________________\n");
                  printf("        DEAR USER YOUR DATA WAS NOT FOUND, PLZ REGISTER AGAIN!!!.\n");
      printf("______________________________________________________________________________________\n");
-       system("CLS");
+        printf("PRESS ANY KEY TO CONTINUE!!!!\n");
+     getch();
+     system("CLS");
         return regist();    
      }
       fscanf(fptr1,"%s\n",&usernamee);
@@ -861,6 +862,8 @@ int op1a;
           printf("\n______________________________________________________________________________________\n");
                  printf("        DEAR USER YOUR DATA WAS NOT FOUND, PLZ REGISTER AGAIN!!!.\n");
      printf("______________________________________________________________________________________\n");
+     printf("PRESS ANY KEY TO CONTINUE!!!!\n");
+     getch();
      system("CLS");
         return regist(); 
      }
@@ -906,8 +909,10 @@ int regist3(){
                  printf("\n______________________________________________________________________________________\n");
                  printf("        DEAR USER YOUR DATA WAS NOT FOUND, PLZ REGISTER AGAIN!!!.\n");
      printf("______________________________________________________________________________________\n");
+     printf("PRESS ANY KEY TO CONTINUE!!!!\n");
+     getch();
      system("CLS");
-        return regist();
+        return regist(); 
      }
       fscanf(fptr3,"%s\n",&username2r);
     fscanf(fptr3,"%d\n",&op2r);
@@ -951,8 +956,10 @@ int regist4(){
                 printf("\n______________________________________________________________________________________\n");
                  printf("        DEAR USER YOUR DATA WAS NOT FOUND, PLZ REGISTER AGAIN!!!.\n");
      printf("______________________________________________________________________________________\n");
+      printf("PRESS ANY KEY TO CONTINUE!!!!\n");
+     getch();
      system("CLS");
-        return regist();
+        return regist(); 
      }
       fscanf(fptr4,"%s\n",&username3t);
     fscanf(fptr4,"%d\n",&op3t);
@@ -996,8 +1003,10 @@ int regist5(){
                   printf("\n______________________________________________________________________________________\n");
                  printf("        DEAR USER YOUR DATA WAS NOT FOUND, PLZ REGISTER AGAIN!!!.\n");
      printf("______________________________________________________________________________________\n");
+      printf("PRESS ANY KEY TO CONTINUE!!!!\n");
+     getch();
      system("CLS");
-        return regist();
+        return regist(); 
      }
     
       fscanf(fptr5,"%s\n",&username4y);
@@ -1043,8 +1052,10 @@ int regist6(){
                   printf("\n______________________________________________________________________________________\n");
                  printf("        DEAR USER YOUR DATA WAS NOT FOUND, PLZ REGISTER AGAIN!!!.\n");
      printf("______________________________________________________________________________________\n");
+     printf("PRESS ANY KEY TO CONTINUE!!!!\n");
+     getch();
      system("CLS");
-        return regist();
+        return regist(); 
      }
     fscanf(fptr6,"%s\n",&username5u);
     fscanf(fptr6,"%d\n",&op5u);
