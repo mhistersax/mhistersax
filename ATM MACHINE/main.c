@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <conio.h>
+#include <stdbool.h>
 /*
 @Title : ATM MACHINE
 @Creator: JORDAN & PELUMI
@@ -23,6 +24,12 @@ int regist6();
 int sign();
 int update();
 int transact();
+int transact2();
+int transact3();
+int transact4();
+int transact5();
+int transact6();
+int pp();
 int main(){
     int op;
     printf("\n\n______________________________________________________________________________________\n");
@@ -1077,7 +1084,51 @@ int regist6(){
      printf("\n______________________________________________________________________________________\n");
      printf("                       WELCOME       %s       %s.\n",name5u,fname5u);
      printf("\n______________________________________________________________________________________\n");
-    printf("PLZ CHOOSE YOUR OPERATION.\nPRESS 1 TO SEND MONEY\n\nPRESS 2 TO WITHDRAW\n\nPRESS 3 TO DEPOSITE\n\nPRESS 4 SIGNOUT.."); 
+    printf("PLZ CHOOSE YOUR OPERATION.\nPRESS 1 TO SEND MONEY\n\nPRESS 2 TO WITHDRAW\n\nPRESS 3 TO DEPOSITE\n\nPRESS 4 SIGNOUT..\n"); 
+    int yui;
+    scanf("%d",&yui);
+    system("CLS");
+    switch(yui)
+    {
+       case 1:
+       printf("\n\n______________________________________________________________________________________\n");
+     printf("\t\t          WELCOME TO FIRST BANK PLC......");
+     printf("\n______________________________________________________________________________________\n");
+     printf("ENETR RECIVER'S ACCOUNT NUMBER\n");
+     int oo;
+     scanf("%d",&oo);
+     if(oo==1)
+     {
+        return transact();
+     }
+     else if (oo==2)
+     {
+        return transact2();
+     }
+     else if (oo==3)
+     {
+        return transact3();
+     }
+     else if (oo==4)
+     {
+        return transact4();
+     }
+     else if (oo==5)
+     {
+        return transact5();
+     }
+     else if (oo==6)
+     {
+       return transact6();
+     }
+     else{
+        printf("INVALID!!!\n");
+        exit(0);
+     }
+       break;
+       default:
+       break;
+    }
  }
  else
  {
@@ -1090,7 +1141,84 @@ int regist6(){
 
 }
 int transact(){
+   FILE *fp;
+   fp = fopen("database6.txt","r");
+   if(fp==NULL)
+   {
+     printf("\n______________________________________________________________________________________\n");
+     printf("        DEAR USER, DATA WAS NOT FOUND, PLZ REGISTER AGAIN!!!.\n");
+     printf("______________________________________________________________________________________\n");
+     printf("PRESS ANY KEY TO CONTINUE!!!!\n");
+     getch();
+     system("CLS");
+     return regist(); 
+   } 
+   int pin;
+   char op[40];
+   char op1[40];
+   char op2[40];
+   int amt,amt1;
+   fscanf(fp,"%s",&op);
+   fscanf(fp,"%d",&pin);
+   fscanf(fp,"%s %s",&op1,&op2);
+   fscanf(fp,"%d",&amt);
+   int yy,u;
+   printf("ARE YOU SURE THIS ACCOUNT NAME IS CORRECT\n");
+   printf("NAME OF ACCOUNT IS %s %s\n",op1,op2);
+   printf("INPUT AMOUNT TO TRANSFER\n");  
+   scanf("%d",&amt1);
+   if(amt<amt1)
+   {
+      printf("BALANCE NOT ENOUGHT, PLEASE TRY AGAIN\n");
+      system("CLS");
+      exit(0);
+   }
+   else
+   {
+     printf("PLEASE INPUT YOUR PIN\n");
+     if(pin==yy)
+     {
+        printf("CORRECT PIN\n");
+        //return pp();
+     }
+   }
+   amt-=amt1;
+   printf("YOUR BALANCE IS %d",amt);
+   fclose(fp);
+  return 0;
+   
+}
+int pp(){
+   FILE *fp;
+   fp = fopen("database1.txt","r");
+   if (fp==NULL)
+   {
+      printf("invalid!!!\n");
+   }
+   float amt1;
+    fprintf(fp,"%f",amt1);
+      printf("TRANSFER DONE!!!\n");
+   fclose(fp);
+   
+}
+int transact1(){
 
 }
+int transact2(){
+
+}
+int transact3(){
+
+}
+int transact4(){
+
+}
+int transact5(){
+
+}
+int transact6(){
+
+}
+
 int update(){
 }
