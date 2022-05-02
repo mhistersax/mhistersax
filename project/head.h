@@ -1,0 +1,1 @@
+#define max 6
