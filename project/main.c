@@ -1,13 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
+#include <conio.h>
 #define max 100
 int product();
-void message();
+int transaction();
+int transaction1();
+int transaction2();
+int transaction3();
 int main(){
     int rel=1;
      int sum=100;
-    char pro1[][max] = {"rice","beans","apple","yam","bread"};
     char pro2[max];
     printf("_____________________________________________________________________________________________\n");
    printf("                                 WELCOME TO OUR BILLING SYSTEM:\n");
@@ -26,52 +29,100 @@ int main(){
    printf("Product 5 is bread                 Product code:1011                   price $500\n");
    printf("_________________________________________________________________________________________________\n");
   int op,i;
-  for(i=1;i<6;i++)
+  printf("HOW MANY PRODUCT WOULD YOU LOVE TO BUY:\n");
+  scanf("%d",&op);
+  if(op==1)
   {
-     printf("PLEASE SELECT  THE %d  PRODUCT CODE OF YOUR CHOICE:\n",i);
-     
-     scanf("%d",&op);
-  switch (op)
+      //system("CLS");
+    return product();
+  }
+  else if(op==2)
   {
-  case 1000:
-  printf("you picked rice    price $%d\n",rel*100);
-      break;
-case 1100:
-printf("you picked beans     price $%d\n",rel*200);
-break;
-case 1110:
-printf("you picked aplle     price $%d\n",rel*300);
-break;
-case 1111:
-printf("you picked yam       price $%d\n",rel*500);
-break;
-case 1011:
-printf("you picked bread     price $%d\n",rel*500);
-break;
-default:
-  printf("your product was not recognised!!\n");
-  return main();
-      break;
+      //system("CLS");
+    return transaction();
   }
-  sum = rel + sum;
-
+  else if(op==3)
+  {
+      //system("CLS");
+    return transaction1();
   }
-  printf("the total is %d\n",sum);
-  
-  
-  
-
+  else if(op==4)
+  {
+      //system("CLS");
+    return transaction2();
+  }
+  else if(op==5)
+  {
+      //system("CLS");
+   return transaction3();
+  }
+  else
+  {
+    printf("invalid\n");
+  }
     return 0;
 }
 int product(){
-    char pro1[max] = {"rice"};
-   char pro2[max] = {"beans"};
-   char pro3[max] = {"apple"};
-   char pro4[max] = {"yam"};
-   char pro5[max] = {"bread"};
-   
+    printf("              WELCOME TO CART \n");
+    printf("ENETR THE FOLLOWING PRODUCT CODE OF YOUR CHOICE\n");
+    int ope,rel=0;
+    scanf("%d",&ope);
+    if(ope==1000)
+    {
+       printf(" PRODUCT        $PRICE        PRODUCT CODE\n");
+        printf(" RICE          $100          1000\n");
+      rel = 100 * 1;
+      printf("_________________________________________________________________\n");
+      printf("TOTTAL = $%d\n",rel);
+      printf("_________________________________________________________________\n");
+    }
+    else if(ope==1100)
+    {
+         printf(" PRODUCT        $PRICE        PRODUCT CODE\n");
+        printf("  BEANS          $200          1100\n");
+      rel = 200 * 1;
+      printf("_________________________________________________________________\n");
+      printf("TOTTAL = $%d\n",rel);
+      printf("_________________________________________________________________\n");
+    }
+    else if(ope==1110)
+    {
+         printf(" PRODUCT        $PRICE        PRODUCT CODE\n");
+        printf("  APPLE           $300          1110\n");;
+      rel = 300 * 1;
+      printf("_________________________________________________________________\n");
+      printf("TOTTAL = $%d\n",rel);
+      printf("_________________________________________________________________\n");
+    }
+    else if(ope==1111)
+    {
+      printf(" PRODUCT        $PRICE        PRODUCT CODE\n");
+        printf(" YAM          $500          1111\n");
+      rel = 500 * 1;
+      printf("_________________________________________________________________\n");
+      printf("TOTTAL = $%d\n",rel);
+      printf("_________________________________________________________________\n");   
+    }
+    else if(ope==1011)
+    {
+        printf(" PRODUCT        $PRICE        PRODUCT CODE\n");
+        printf(" BREAD          $500          1011\n");
+      rel = 500 * 1;
+      printf("_________________________________________________________________\n");
+      printf("TOTTAL = $%d\n",rel);
+      printf("_________________________________________________________________\n");
+    }
     return 0;
 }
-void message(){
+int transaction(){
+
+}
+int transaction1(){
+
+}
+int transaction2(){
+
+}
+int transaction3(){
 
 }
