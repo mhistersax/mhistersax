@@ -112,10 +112,122 @@ int product(){
       printf("TOTTAL = $%d\n",rel);
       printf("_________________________________________________________________\n");
     }
+    else{
+       printf("invalid\n");
+       exit(0);
+    }
     return 0;
 }
 int transaction(){
+    printf("       WELCOME TO CART   \n");
+    int op,op1,rel=0;
 
+      printf("ENETR THE FIRST PRODUCT CODE OF YOUR CHOICE\n");
+      scanf("%d",&op);
+      printf("ENETR THE SECOND PRODUCT CODE OF YOUR CHOICE\n");
+      scanf("%d",&op1);
+     if((op==1000) && (op1==1000))
+    {
+       printf(" PRODUCT        $PRICE        PRODUCT CODE\n");
+        printf(" RICE          $100          1000\n");
+        printf(" RICE          $100          1000\n");
+      rel = 100 + 100;
+      printf("_________________________________________________________________\n");
+      printf("TOTTAL = $%d\n",rel);
+      printf("_________________________________________________________________\n");
+    }
+    else if((op==1000) && (op1==1100))
+    {
+        printf(" PRODUCT        $PRICE        PRODUCT CODE\n");
+        printf(" RICE          $100          1000\n");
+        printf(" BEANS         $200          1100\n");
+      rel = 100 + 200;
+      printf("_________________________________________________________________\n");
+      printf("TOTTAL = $%d\n",rel);
+      printf("_________________________________________________________________\n");
+    }
+    else if((op==1000) && (op1==1110))
+    {
+        printf(" PRODUCT        $PRICE        PRODUCT CODE\n");
+        printf(" RICE          $100          1000\n");
+        printf(" APPLE         $300          1110\n");
+      rel = 100 + 300;
+      printf("_________________________________________________________________\n");
+      printf("TOTTAL = $%d\n",rel);
+      printf("_________________________________________________________________\n");
+    }
+    else if((op==1000) && (op1==1111))
+    {
+     printf(" PRODUCT        $PRICE        PRODUCT CODE\n");
+        printf(" RICE          $100          1000\n");
+        printf(" YAM           $500          1111\n");
+      rel = 100 + 500;
+      printf("_________________________________________________________________\n");
+      printf("TOTTAL = $%d\n",rel);
+      printf("_________________________________________________________________\n");   
+    }
+    else if((op==1000) && (op1==1011))
+    {
+        printf(" PRODUCT        $PRICE        PRODUCT CODE\n");
+        printf(" RICE          $100          1000\n");
+        printf(" BREAD         $500          1011\n");
+      rel = 100 + 500;
+      printf("_________________________________________________________________\n");
+      printf("TOTTAL = $%d\n",rel);
+      printf("_________________________________________________________________\n");
+    }
+    else if((op==1100) && (op1==1000))
+    {
+     printf(" PRODUCT        $PRICE        PRODUCT CODE\n");
+        printf(" BEANS         $200          1100\n");
+        printf(" RICE          $100          1000\n");
+      rel = 100 + 200;
+      printf("_________________________________________________________________\n");
+      printf("TOTTAL = $%d\n",rel);
+      printf("_________________________________________________________________\n");  
+    }
+    else if((op==1100) && (op1==1100))
+    {
+         printf(" PRODUCT        $PRICE        PRODUCT CODE\n");
+        printf(" BEANS          $200          1100\n");
+        printf(" BEANS          $200          1100\n");
+      rel = 200 + 200;
+      printf("_________________________________________________________________\n");
+      printf("TOTTAL = $%d\n",rel);
+      printf("_________________________________________________________________\n");
+    }
+    else if((op==1100) && (op1==1110))
+    {
+         printf(" PRODUCT        $PRICE        PRODUCT CODE\n");
+        printf(" BEANS          $200          1100\n");
+        printf(" APPLE          $300          1110\n");
+      rel = 200 + 300;
+      printf("_________________________________________________________________\n");
+      printf("TOTTAL = $%d\n",rel);
+      printf("_________________________________________________________________\n");
+
+    }
+    else if((op==1100) && (op1==1111))
+    {
+         printf(" PRODUCT        $PRICE        PRODUCT CODE\n");
+        printf(" BEANS          $200          1100\n");
+        printf("  YAM           $500          1111\n");
+      rel = 200 + 500;
+      printf("_________________________________________________________________\n");
+      printf("TOTTAL = $%d\n",rel);
+      printf("_________________________________________________________________\n");
+    }
+    else if((op==1100) && (op1==1011))
+    {
+         printf(" PRODUCT        $PRICE        PRODUCT CODE\n");
+        printf(" BEANS          $200          1100\n");
+        printf("  BREAD         $500          1011\n");
+      rel = 200 + 500;
+      printf("_________________________________________________________________\n");
+      printf("TOTTAL = $%d\n",rel);
+      printf("_________________________________________________________________\n");
+    }
+    
 }
 int transaction1(){
 
