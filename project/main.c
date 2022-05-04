@@ -260,8 +260,8 @@ int transaction(){
     else if((op==1110) && (op1==1000))
     {
          printf(" PRODUCT        $PRICE        PRODUCT CODE\n");
-        printf(" APPLE          $300          1110\n");
-        printf(" YAM            $500          1111\n");
+        printf(" APPLE           $300          1110\n");
+        printf(" YAM             $500          1111\n");
       rel = 300 + 500;
       printf("_________________________________________________________________\n");
       printf("TOTTAL = $%d\n",rel);
@@ -277,6 +277,7 @@ int transaction(){
       printf("TOTTAL = $%d\n",rel);
       printf("_________________________________________________________________\n");
     }
+    
 
 
     
