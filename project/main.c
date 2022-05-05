@@ -446,6 +446,7 @@ int transaction1(){
       printf("TOTTAL = $%d\n",rel);
       printf("_________________________________________________________________\n");
     }
+    
 
 }
 int transaction2(){
