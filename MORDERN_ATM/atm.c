@@ -302,7 +302,7 @@ int withdraw(){
         printf("Amount Not Sufficient\n");
         printf("Please choose Amount Lesser than %d\n",AMT);
         printf("Redirecting You Back\nPlease Wait\n");
-        sleep(3);
+        sleep(13);
         system("cls");
         return withdraw();
     }
