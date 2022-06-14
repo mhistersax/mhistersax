@@ -20,22 +20,21 @@ int checkbalance(int a, int b);
          scanf("%d",&pin);
           printf("Please create your four digit pin below\n");
          scanf("%d",&pin2);
+         rel = iniamt(pin,pin2);
          if(pin!=pin2)
          {
              printf("PIN DOES NOT MATCH\n");
              return main();
          }
+         
          printf("Congratulations your four digit pin is %d\n",pin);
-         rel = iniamt(pin,pin2);
+         return menu();
          system("CLS");
          return menu();
+         return 0;
      }
-
-
-//the menu for choice function
-
-//initialize function
 int menu(){
+    //printf("hello");
      int pin,pin2,rel,a,b,c,d,choice;
      printf("______________________________________________________________________________________\n");
      printf("\t\t          WELCOME TO  BANK PLC......");
@@ -49,27 +48,27 @@ int menu(){
     scanf("%d", &choice);
     switch (choice) {
             case 1:
-            system("CLS");
+            //system("CLS");
                return iniamt(a,b);
                 //menu(&choice);
                 break;
             case 2:
-            system("CLS");
+            //system("CLS");
                 return deposit(c,d);
                // menu(&choice);
                 break;
             case 3:
-            system("CLS");
+            //system("CLS");
                return  withdraw(a,b);
                 //menu(&choice);
                 break;
             case 4:
-            system("CLS");
+            //system("CLS");
                return checkbalance(a,b);
                // menu(&choice);
                 break;
             case 5:
-            system("CLS");
+            //system("CLS");
                 printf("Thank you for using JAY BANK PLC");
                 exit(0);
                 break;
@@ -90,11 +89,13 @@ int iniamt(int a,int b){
     scanf("%d",&op);
     if(a==op)
     {
+    // rel =deposit(j,b);
     printf("______________________________________________________________________________________\n");
      printf("\n                                          Your new balance is %d\n", j);
      printf("______________________________________________________________________________________\n");
-     system("CLS");
-     rel =deposit(j,b);
+     //system("CLS");
+     return menu();
+     //rel =deposit(j,b);
      //system("CLS");
      return menu();
     }
@@ -108,7 +109,7 @@ int iniamt(int a,int b){
 }
 //deposit
 int deposit(int a ,int b){
-    int op,j,rel;
+    /*int op,j,rel;
     int depositAmount;
     printf("______________________________________________________________________________________\n");
      printf("\t\t             WELCOME TO JAY BANK PLC......");
@@ -120,11 +121,12 @@ int deposit(int a ,int b){
     if(b==op)
     {
      a += depositAmount;
+     rel = withdraw(a,b);
      printf("______________________________________________________________________________________\n");
     printf("\n                                           Your balance is %d\n", a);
     printf("______________________________________________________________________________________\n");
-    rel = withdraw(a,b);
-    system("CLS");
+    return menu();
+    //system("CLS");
      return menu();
     }
     else{
@@ -133,11 +135,11 @@ int deposit(int a ,int b){
         return deposit(a,b);
     }
     
-    return 0;
+    return 0;*/
 }
 //withdraw
 int withdraw(int a, int b){
-     int op,j,rel;
+     /*int op,j,rel;
     int withdrawAmount;
     printf("______________________________________________________________________________________\n");
      printf("\t\t             WELCOME TO  BANK PLC......");
@@ -156,7 +158,8 @@ int withdraw(int a, int b){
      printf("______________________________________________________________________________________\n");
     printf("\n                                                           Your balance is %d\n", a);
     printf("______________________________________________________________________________________\n");
-    system("CLS");
+    //system("CLS");
+    return menu();
     rel = checkbalance(a,b);
      return menu();
     }
@@ -167,11 +170,11 @@ int withdraw(int a, int b){
     }
     
     
-    return 0;
+    return 0;*/
 }
 //displaying the balance
 int checkbalance(int a, int b){
-    int op;
+    /*int op;
     printf("______________________________________________________________________________________\n");
      printf("\t\t                   WELCOME TO BANK PLC......");
      printf("\n______________________________________________________________________________________\n");
@@ -188,5 +191,5 @@ int checkbalance(int a, int b){
         printf("wrong pin\n");
     }
     
-    return 0;
+    return 0;*/
 }
