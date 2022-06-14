@@ -5,10 +5,17 @@ int menu();
 int menu211();
 int deposit();
 int withdraw();
+int withdraw1(int a);
 int display();
 int reporter(int a);
 int main(){
     int choice;
+    /*
+       PROGRAM INSTRUCTION:
+       1. FOR FIRST USER, KINDLY CREAT ACCOUNT BY CHOOSING OPTION 1
+       2. ALWAYS DISPLAY ACCOUNT BEFORE WITHDRAWING
+    */
+    printf("");
      printf("______________________________________________________________________________________\n");
      printf("\t\t          WELCOME TO  BANK PLC......");
      printf("\n______________________________________________________________________________________\n");
@@ -267,12 +274,77 @@ int display(){
         system("cls");
         return display();
     }
-    
 
 }
 int withdraw(){
-
-
+    int dum;
+    int AMT, WITHDRAL;
+    FILE *fp;
+     fp = fopen("Records.txt", "r");
+     if (fp==NULL)
+     {
+         printf("Unable to read database for your records\nPlease Contact The Support Team\n");
+     }
+     fscanf(fp,"%d",&AMT);
+     fclose(fp);
+    printf("______________________________________________________________________________________\n");
+    printf("Dear User!!, Welcome.\n");
+    printf("Your Current Balance is %d\n",AMT);
+    printf("______________________________________________________________________________________\n");
+    printf("Please Input amount to withdraw\n");
+    scanf("%d",&WITHDRAL);
+    printf("Amount Received>>>\n");
+    //Printf("Please wait>> \n");
+    sleep(2);
+    printf("Validating Amount In Account>>>>>\n");
+    if (WITHDRAL>AMT)
+    {
+        printf("Amount Not Sufficient\n");
+        printf("Please choose Amount Lesser than %d\n",AMT);
+        printf("Redirecting You Back\nPlease Wait\n");
+        sleep(3);
+        system("cls");
+        return withdraw();
+    }
+    else{
+        printf("Good To Go!!!\n");
+        AMT-=WITHDRAL;
+        dum = withdraw1(AMT);
+    }
+}
+int withdraw1(int a){
+    FILE *fp;
+    fp = fopen("Backenddata.txt", "r");
+     if (fp==NULL)
+     {
+         printf("Unable to read database for your records\nPlease Contact The Support Team\n");
+     }
+     char dum[30], dum1[30];
+     int pini,poo;
+     fscanf(fp,"%s",&dum);
+     fscanf(fp,"%s",&dum1);
+     fscanf(fp,"%d",&pini);
+     fclose(fp);
+     printf("______________________________________________________________________________________\n");
+     printf("Dear User Please Provide your Pin\n");
+    scanf("%d",&poo);
+    if (poo==pini)
+    {
+        printf("Pin correct\n");
+        printf("Withdrawal Sucessful!!\n");
+        printf("Your current Balance is %d\n",a);
+        sleep(10);
+        return menu211();
+    }
+    else{
+        printf("");
+        printf("Pin Not Correct!!\n");
+        //printf("Please wait>>>>> \n");
+        sleep(3);
+        system("cls");
+        return withdraw();
+    }
+    return 0;
 }
 int reporter(int a){
     printf("______________________________________________________________________________________\n");
@@ -286,6 +358,9 @@ int reporter(int a){
 
      }
      fprintf(fp,"%d\n",a);
+     fclose(fp);
+     system("cls");
+     return menu211();
     return 0;
 }
 
