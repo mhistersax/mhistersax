@@ -16,8 +16,8 @@ I'm a full stack developer...
 
 
 # 🛠 Skills
-
 Javascript
+
 
 HTML
 
@@ -34,6 +34,12 @@ React.js
 
 
 Git
+
+
+Tailwind css
+
+
+JQuery
 
 
 CSS...
