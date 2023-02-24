@@ -10,9 +10,7 @@
 
 
 ## 🚀 About Me
-I'm a full stack developer...
-
-
+I am an enthusiast and experienced front-end developer.
 
 
 # 🛠 Skills
