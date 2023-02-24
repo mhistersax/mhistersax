@@ -24,22 +24,16 @@ HTML
  C
 
 
- C#
-
-
  C++
-
-
- .NET
 
 
 Angular.js
 
 
-Node.js
+React.js
 
 
-Python
+Git
 
 
 CSS...
