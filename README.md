@@ -1,4 +1,6 @@
 <h1 align="center">Hi 👋, I'm Bamigboye Oluwapelumi</h1>
+
+
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=San+serif&pause=1000&width=435&lines=Hello%2C+I'm+Oluwapelumi+Bamigboye;A+skilled+software+developer+proficient;in+a+wide+range+of+technologies)](https://git.io/typing-svg)
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=mhistersax&label=Profile%20views&color=0e75b6&style=flat" alt="mhistersax" /> </p>
